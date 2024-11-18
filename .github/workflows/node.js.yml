@@ -21,26 +21,22 @@ jobs:
         with:
           node-version: '22'  # 根据你的项目需求调整版本
 
-      # 步骤 3：缓存 npm 依赖（可选）
-      - name: Cache npm dependencies
+      # 步骤 3：缓存 yarn 依赖（可选）
+      - name: Cache yarn dependencies
         uses: actions/cache@v3
         with:
-          path: ~/.npm
-          key: ${{ runner.os }}-node-${{ matrix.node-version }}-npm-cache
+          path: ~/.yarn
+          key: ${{ runner.os }}-node-${{ matrix.node-version }}-yarn-cache
           restore-keys: |
             ${{ runner.os }}-node-${{ matrix.node-version }}-
 
       # 步骤 4：安装项目依赖
       - name: Install Dependencies
-        run: npm install
+        run: yarn install
 
       # 步骤 5：运行测试
       - name: Run Tests
-        run: npm test
-
-      # 可选步骤：运行代码覆盖率（如果配置了）
-      - name: Run Code Coverage
-        run: npm run coverage
+        run: yarn test
 
       # 步骤 6：运行部署脚本
       - name: Run Deploy Script
