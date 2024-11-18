@@ -20,7 +20,7 @@ git commit -m 'deploy'
 git remote set-url origin git@github.com:AerMoon-7/ServerHelp.git
 
 # 发布到 https://aermoon-7.github.io/ServerHelp
-git push -f origin master:sh-pages
+git push -f origin main:sh-pages
 
 # 返回原始目录
 cd -
