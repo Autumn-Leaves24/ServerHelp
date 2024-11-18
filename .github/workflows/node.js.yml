@@ -21,7 +21,13 @@ jobs:
         with:
           node-version: '22'  # 根据你的项目需求调整版本
 
-      # 步骤 3：缓存 yarn 依赖（可选）
+      # 设置 Git 用户信息
+      - name: Configure Git user
+        run: |
+          git config --global user.email "a7autumn@outlook.com"
+          git config --global user.name "Autumn"
+
+      # 步骤 4：缓存 yarn 依赖（可选）
       - name: Cache yarn dependencies
         uses: actions/cache@v3
         with:
@@ -30,7 +36,7 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-node-${{ matrix.node-version }}-
 
-      # 步骤 4：安装项目依赖
+      # 步骤 5：安装项目依赖
       - name: Install Dependencies
         run: yarn install
 
