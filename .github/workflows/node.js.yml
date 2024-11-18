@@ -1,0 +1,60 @@
+name: Node.js CI and Deployment
+
+# 触发条件：在每次 push 到 main 分支时触发
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      # 步骤 1：检出代码仓库
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+
+      # 步骤 2：设置 Node.js 环境
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '22'  # 根据你的项目需求调整版本
+
+      # 步骤 3：缓存 npm 依赖（可选）
+      - name: Cache npm dependencies
+        uses: actions/cache@v3
+        with:
+          path: ~/.npm
+          key: ${{ runner.os }}-node-${{ matrix.node-version }}-npm-cache
+          restore-keys: |
+            ${{ runner.os }}-node-${{ matrix.node-version }}-
+
+      # 步骤 4：安装项目依赖
+      - name: Install Dependencies
+        run: npm install
+
+      # 步骤 5：运行测试
+      - name: Run Tests
+        run: npm test
+
+      # 可选步骤：运行代码覆盖率（如果配置了）
+      - name: Run Code Coverage
+        run: npm run coverage
+
+      # 步骤 6：运行部署脚本
+      - name: Run Deploy Script
+        run: |
+          chmod +x deploy.sh
+          ./deploy.sh
+        env:
+          # 如果脚本中需要使用环境变量，可以在这里设置
+          DEPLOY_SECRET: ${{ secrets.DEPLOY_SECRET }}
+          API_KEY: ${{ secrets.API_KEY }}
+
+      # 可选步骤：上传构建产物或报告
+      - name: Upload Build Artifacts (可选)
+        uses: actions/upload-artifact@v3
+        with:
+          name: build
+          path: build/
