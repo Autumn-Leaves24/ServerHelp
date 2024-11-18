@@ -11,6 +11,13 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      # 设置 SSH 密钥
+      - name: Set up SSH keys
+        uses: webfactory/ssh-agent@v0.5.4
+        with:
+          ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
+          ssh-known-hosts: ${{ secrets.SSH_KNOWN_HOSTS }}
+      
       # 步骤 1：检出代码仓库
       - name: Checkout Repository
         uses: actions/checkout@v3
