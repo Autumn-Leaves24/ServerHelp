@@ -19,7 +19,7 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: '18'  # 根据你的项目需求调整版本
+          node-version: '20'  # 根据你的项目需求调整版本
 
       # 步骤 3：安装项目依赖
       - name: Install Dependencies
