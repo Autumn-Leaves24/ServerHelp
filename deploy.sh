@@ -12,7 +12,7 @@ cd docs/.vuepress/dist
 git init
 git add -A
 git commit -m 'deploy'
-git push origin master
+git remote set-url origin https://github.com/ServerHelp.git
 
 # 发布到 https://aermoon-7.github.io/ServerHelp
 git push -f git@github.com:AerMoon-7/ServerHelp.git master:sh-pages
