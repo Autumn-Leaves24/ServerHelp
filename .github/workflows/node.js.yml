@@ -16,7 +16,7 @@ jobs:
         uses: webfactory/ssh-agent@v0.5.4
         with:
           ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
-          ssh-known-hosts: ${{ secrets.SSH_KNOWN_HOSTS }}
+          ssh-auth-sock: ${{ secrets.SSH_AUTH_SOCK }}
 
       # 添加已知主机
       - name: Add SSH known hosts
