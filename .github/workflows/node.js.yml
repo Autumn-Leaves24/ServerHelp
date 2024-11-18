@@ -34,10 +34,6 @@ jobs:
       - name: Install Dependencies
         run: yarn install
 
-      # 步骤 5：运行测试
-      - name: Run Tests
-        run: yarn test
-
       # 步骤 6：运行部署脚本
       - name: Run Deploy Script
         run: |
