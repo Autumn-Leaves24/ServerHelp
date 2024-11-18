@@ -9,12 +9,18 @@ npm run docs:build
 # 进入生成的文件夹
 cd docs/.vuepress/dist
 
-git init
+# 初始化 Git 仓库（可选，如果 dist 目录已经是一个 Git 仓库，可以省略）
+# git init
+
+# 添加所有文件并提交
 git add -A
 git commit -m 'deploy'
-git remote set-url origin https://github.com/AerMoon-7/ServerHelp.git
+
+# 设置远程仓库 URL（使用 SSH URL）
+git remote set-url origin git@github.com:AerMoon-7/ServerHelp.git
 
 # 发布到 https://aermoon-7.github.io/ServerHelp
-git push -f git@github.com:AerMoon-7/ServerHelp.git master:sh-pages
+git push -f origin master:sh-pages
 
+# 返回原始目录
 cd -
