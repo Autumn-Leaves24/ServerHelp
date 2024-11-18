@@ -10,7 +10,7 @@ yarn run docs:build
 cd docs/.vuepress/dist
 
 # 初始化 Git 仓库（可选，如果 dist 目录已经是一个 Git 仓库，可以省略）
-git init
+# git init
 
 # 添加所有文件并提交
 git add -A
