@@ -16,11 +16,8 @@ cd docs/.vuepress/dist
 git add -A
 git commit -m 'deploy'
 
-# 设置远程仓库 URL（使用 SSH URL）
-git remote set-url origin git@github.com:AerMoon-7/ServerHelp.git
-
 # 发布到 https://aermoon-7.github.io/ServerHelp
-git push -f origin main:sh_pages
+git push -f @github.com:AerMoon-7/ServerHelp.git main:sh_pages
 
 # 返回原始目录
 cd -
