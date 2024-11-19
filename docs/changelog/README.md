@@ -9,24 +9,32 @@ sidebar: auto
 - 矿石世界 (不定时重置，无世界结构)
 :::
 
+## 11月20号 服务器应急维护
+::: tip 维护内容:
+- 修复更新粘液科技无法使用问题
+- **本次应急更新将给当前已注册的玩家进行发放补偿**  
+  使用指令`/wk mail`来打开礼包邮件来领取补偿内容  
+  有效期至：11月20日23:59 (请玩家们尽快领取)
+:::
+
 ## 11月19号 服务器维护更新
 ::: tip 更新内容:
 - 添加粘液科技插件来扩展服务器玩法  
 - 已安装的粘液附属:
-  1. 更多装备
-  2. 工业
-  3. 粘液汉化
-  4. 环保能源
-  5. 魔法
-  6. 蓬松机器
-  7. 全球变暖
-  8. 网络
-  9. 无尽技术
-  10. 消音器
-  11. 信息显示
-  12. 异域花园
-  13. 粘液匠魂
-  14. 粘液木龙头
+  1. ExtraGear 更多装备
+  2. LiteXpansion 工业
+  3. GuizhanLibPlugin 汉化前置
+  4. EcoPower 环保能源
+  5. Bump Bump魔法
+  6. FluffyMachines 蓬松机器
+  7. DankTech2 无底存储2
+  8. Networks 网络
+  9. InfinityExpansion 无尽科技
+  10. SoundMuffler 消音器
+  11. SlimeHUD 方块信息显示
+  12. ExoticGarden 异域花园
+  13. SlimeTinker 粘液匠魂
+  14. SlimyTreeTaps 粘液木龙头
 :::
 ::: warning 删除内容：
 - 移除EM精英怪物和相关的地图
