@@ -8,7 +8,7 @@ jobs:
       uses: actions/checkout@main
 
     - name: vuepress-deploy
-      uses: jenkey2011/vuepress-deploy@main
+      uses: AerMoon-7/ServerHelp@main
       env:
         ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
         TARGET_REPO: AerMoon-7/ServerHelp
