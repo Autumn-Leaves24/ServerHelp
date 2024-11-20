@@ -15,11 +15,12 @@ module.exports = {
               sidebarDepth: 1,
               children: [
                 '',
-                '/joinserver'
+                '/joinserver',
+                '/slimefunhelp'
               ]
             }
           ],
-        displayAllHeaders: true,
+        displayAllHeaders: false,
         docsRepo: 'AerMoon-7/ServerHelp',
         docsDir: 'docs',
         docsBranch: 'main',
