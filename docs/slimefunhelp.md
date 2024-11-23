@@ -15,6 +15,7 @@ Slimefun4
 [官方GitHub百科(英文)](https://github.com/Slimefun/Slimefun4/wiki)
 
 ### 粘液科技的基础教程视频
+[2024年最新粘液科技教程·第一期](https://www.bilibili.com/video/BV1mr421G7WG/?share_source=copy_web&vd_source=f3ab8a17bcd2d6f2485217c19c125f52)  
 <iframe src="//player.bilibili.com/player.html?isOutside=true&aid=1403467873&bvid=BV1mr421G7WG&cid=1509698336&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe>
 
 ### 我们推荐你安装粘液科技的材质包来获得更好的游玩体验  
