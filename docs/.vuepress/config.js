@@ -16,12 +16,14 @@ module.exports = {
               children: [
                 '',
                 '/joinserver',
-                '/slimefunhelp'
+                '/slimefunhelp',
+                '/mcmmohelp',
+                '/quickshophelp'
               ]
             }
           ],
         displayAllHeaders: false,
-        docsRepo: 'AerMoon-7/ServerHelp',
+        docsRepo: 'Autumn-Leaves24/ServerHelp',
         docsDir: 'docs',
         docsBranch: 'main',
         editLinks: true,

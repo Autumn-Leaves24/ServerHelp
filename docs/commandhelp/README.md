@@ -8,20 +8,26 @@ sidebar: auto
 > 当前此页面还未完善，你可以成为该文档的贡献者，为我们进行编写修改与完善
 
 ## 猫种子登录
-::: details 折叠的内容
 `/reg <密码> <重复密码>` 注册  
 `/l <密码>` 登录  
 `/changepassword <旧密码> <新密码> <重复新密码>` 修改密码  
 `/bindemail set <需要绑定的邮箱>` 绑定用于重置密码的邮箱  
 `/bindemail verify <邮箱验证码>` 验证用于绑定邮箱的验证码  
 `/resetpassword re <验证码> <新密码>` 用验证码来验证以此设置新的密码
-:::
+
+## McMMO指令
+`/mcmmo help` McMMO帮助
+`/mcmmoview open` 打开McMMO技能GUI界面
 
 ## 粘液科技
 `/sf guide` 获取粘液科技指南书  
 
 ## 箱子商店
-`/qs help` 查看箱子商店使用帮助
+`/qs help` 查看箱子商店使用帮助  
+`/qs buy` 将鼠标准星所对的商店转变为收购商店  
+`/qs sell` 将鼠标准星所对的商店转变为出售商店  
+`/qs price <price>` 将鼠标准星所对的商店的交易价格修改为指定值  
+`/qs clean` 将所有库存数量为0的商店移除。
 
 ## 方块查询
 `/co i` 开启/关闭查询功能
