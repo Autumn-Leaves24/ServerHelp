@@ -16,11 +16,8 @@ sidebar: auto
 `/resetpassword re <验证码> <新密码>` 用验证码来验证以此设置新的密码
 
 ## McMMO指令
-`/mcmmo help` McMMO帮助
+`/mcmmo help` McMMO帮助  
 `/mcmmoview open` 打开McMMO技能GUI界面
-
-## 粘液科技
-`/sf guide` 获取粘液科技指南书  
 
 ## 箱子商店
 `/qs help` 查看箱子商店使用帮助  
@@ -32,8 +29,8 @@ sidebar: auto
 ## 方块查询
 `/co i` 开启/关闭查询功能
 
-## 礼包
-`/wk mail` 打开礼包邮件
+## 兑换码
+`/pr use <兑换码>` 使用兑换码
 
 ## 其他
 `/cd` 打开菜单  

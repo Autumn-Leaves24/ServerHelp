@@ -5,6 +5,7 @@ module.exports = {
     themeConfig: {
         nav: [
             { text: '首页', link: '/' },
+            { text: '玩法帮助', link: '/gamehelp/intensive'},
             { text: '更新日志', link: '/changelog/' },
             { text: '命令帮助', link: '/commandhelp/' },
         ],
@@ -16,9 +17,16 @@ module.exports = {
               children: [
                 '',
                 '/joinserver',
-                '/slimefunhelp',
-                '/mcmmohelp',
-                '/quickshophelp'
+              ]
+            },
+            {
+              title: '玩法帮助',
+              collapsable: false,
+              sidebarDepth: 1,
+              children: [
+                '/gamehelp/intensive',
+                '/gamehelp/mcmmohelp',
+                '/gamehelp/quickshophelp'
               ]
             }
           ],
