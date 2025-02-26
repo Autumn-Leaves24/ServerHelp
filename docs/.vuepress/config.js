@@ -26,7 +26,8 @@ module.exports = {
               children: [
                 '/gamehelp/intensive',
                 '/gamehelp/mcmmohelp',
-                '/gamehelp/quickshophelp'
+                '/gamehelp/quickshophelp',
+                '/gamehelp/residence'
               ]
             }
           ],
