@@ -25,8 +25,8 @@ module.exports = {
               sidebarDepth: 1,
               children: [
                 '/gamehelp/intensive',
-                '/gamehelp/mcmmohelp',
-                '/gamehelp/quickshophelp',
+                '/gamehelp/mcmmo',
+                '/gamehelp/quickshop',
                 '/gamehelp/residence'
               ]
             }
