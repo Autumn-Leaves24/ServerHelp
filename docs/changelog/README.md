@@ -4,6 +4,23 @@ sidebar: auto
 
 # 服务器更新通知
 
+## 2025/04/07 服务器维护更新
+::: tip 更新内容:
+- 更换了新的兑换码插件
+:::
+::: warning 代办内容
+- 正在寻找新的地标插件
+- 正在寻找新的称号插件
+- 正在寻找新的玩法插件
+:::
+::: danger 删除内容：
+- 移除「米饭」系列插件  
+PlayerRewards  
+PlayerIntensify  
+PlayerWarp  
+PlayerTitle 
+:::
+
 ## 2025/02/27 服务器维护更新
 ::: tip 更新内容:
 - ViaVersion 插件更新 (支持Java版 1.7~1.21.4)
@@ -47,3 +64,6 @@ sidebar: auto
 - 移除粘液科技
 - 移除无上限附魔
 :::
+
+## 更早的更新日志  
+[一周目的更新内容](/ServerHelp/changelog/4-1)

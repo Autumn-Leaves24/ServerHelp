@@ -24,10 +24,18 @@ module.exports = {
               collapsable: false,
               sidebarDepth: 1,
               children: [
-                '/gamehelp/intensive',
+                //'/gamehelp/intensive',
                 '/gamehelp/mcmmo',
                 '/gamehelp/quickshop',
                 '/gamehelp/residence'
+              ]
+            },
+            {
+              title: '服务器公告',
+              collapsable: false,
+              sidebarDepth: 1,  
+              children: [
+                '/Notice/25-4-7', 
               ]
             }
           ],
@@ -37,6 +45,6 @@ module.exports = {
         docsBranch: 'main',
         editLinks: true,
         editLinkText: '在 GitHub 上编辑此页面',
-        lastUpdated: '上次更新',
+        lastUpdated: '上次编辑于',
     }
 }
